@@ -1,0 +1,16 @@
+{
+   "color":{
+      "_foreground":"white",
+      "_middleground":"gray",
+      "_background":"white",
+      "_tint":"blue",
+      "font":{
+         "_highlight":"black",
+         "_disabled":"black"
+      }
+   },
+   "font":{
+      "_system":{"name":".SFUIText","size":18},
+      "_systemBold":{"name":".SFUIText-Semibold","size":18}
+   }
+}

@@ -1,0 +1,17 @@
+import UIKit
+
+class SettingsController:UITableViewController {
+    @IBAction func onSwitchChange(_ sender: UISwitch) {
+        curThemeType = sender.isOn ? .dark : .light
+        theme = getTheme(curThemeType)
+        ThemeUtils.transition(self)
+    }
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        AppDelegate.curViewController = self
+        ThemeUtils.apply(self)
+//        Swift.print("topMostViewController():  \(UIApplication.shared.topMostViewController())")
+        
+        
+    }
+}
