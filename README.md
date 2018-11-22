@@ -1,6 +1,5 @@
-# ThemePark
-Theme library for iOS
-
+# ThemePark   
+Theme library for iOS (still in drafting stage)
 
 <img width="222" alt="img" src="https://rawgit.com/stylekit/img/master/ThemeLib.gif">  
 
@@ -10,6 +9,7 @@ Theme library for iOS
 - Traverses the entire UIView hierarchy with one call 🤯
 - Animated transitions film 🎬
 - Small foot-print 🗜
+- Can load theme styles from JSON 🤠
 - Probably high codebeat GPA 😏
 
 ### Todo:
