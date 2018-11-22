@@ -1,0 +1,11 @@
+framework module ThemePark {
+  umbrella header "ThemePark.h"
+
+  export *
+  module * { export * }
+}
+
+module ThemePark.Swift {
+    header "ThemePark-Swift.h"
+    requires objc
+}

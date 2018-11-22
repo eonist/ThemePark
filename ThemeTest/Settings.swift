@@ -1,4 +1,5 @@
 import UIKit
+import ThemePark
 
 class SettingsController:UITableViewController {
     @IBAction func onSwitchChange(_ sender: UISwitch) {

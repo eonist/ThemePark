@@ -10,8 +10,8 @@ extension UITableViewController:Themeable{
             navigationController?.navigationBar.barTintColor = theme.color.background
             navigationController?.navigationBar.barStyle = (curThemeType == .dark ? .black : .default)
             let navBarTitleColor:UIColor = theme.color.font.highlight
-            navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: navBarTitleColor]
-            navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor: navBarTitleColor]
+         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: navBarTitleColor]
+         navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: navBarTitleColor]
             //This line is a "Hot fix" see: https://forums.developer.apple.com/thread/60258
             navigationController?.navigationBar.layoutIfNeeded()
         }()
