@@ -2,7 +2,7 @@ import UIKit
 /**
  * We use string as its Codable, and UIColor UIFont is not, to use the latter one could use UnWrap lib
  */
-struct Theme:Decodable{
+public struct Theme:Decodable{
     let color:ThemeColor
     let font:ThemeFont
 }
@@ -12,7 +12,6 @@ struct ThemeColor:Decodable{
     private let _background:String
     private let _tint:String
     let font:ThemeFontColor
-    
 }
 extension ThemeColor{
     var foreground:UIColor {return ColorUtils.color(_foreground)}
@@ -40,5 +39,3 @@ struct DecodableFont:Decodable{
     let name:String
     let size:CGFloat
 }
-
-

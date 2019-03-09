@@ -7,12 +7,15 @@ class SettingsController:UITableViewController {
         theme = getTheme(curThemeType)
         ThemeUtils.transition(self)
     }
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        AppDelegate.curViewController = self
-        ThemeUtils.apply(self)
-//        Swift.print("topMostViewController():  \(UIApplication.shared.topMostViewController())")
-        
-        
-    }
+}
+/**
+ * Core
+ */
+extension SettingsController{
+   override func viewDidLayoutSubviews() {
+      super.viewDidLayoutSubviews()
+      AppDelegate.curViewController = self
+      ThemeUtils.apply(self)
+      //Swift.print("topMostViewController():  \(UIApplication.shared.topMostViewController())")
+   }
 }

@@ -1,4 +1,3 @@
-
 import Foundation
 /**
  * EXAMPLE:
@@ -9,15 +8,15 @@ import Foundation
  * FileWatcher(String(string: "~/Desktop/test.txt").expandingTildeInPath) { Swift.print("file was modified") }.start() //shorthand
  * NOTE: Only works with a filepath to a file
  */
-class FileWatcher{
-    typealias CallBack = ()->Void
+public class FileWatcher{
+    public typealias CallBack = ()->Void
     let filePath:String
     var callback:CallBack
     var latency:TimeInterval /*in seconds*/
     var timer:Timer?
     var prevModifiedDate:NSDate?
     
-    init(_ filePath:String, latency:Double = 0.3, callback:@escaping CallBack = {}){
+    public init(_ filePath:String, latency:Double = 0.3, callback:@escaping CallBack = {}){
         self.filePath = filePath
         self.latency = latency
         self.callback = callback
@@ -25,14 +24,14 @@ class FileWatcher{
     /**
      * Start listening
      */
-    func start(){
+    public func start(){
         prevModifiedDate =  Utils.modificationDate(filePath)//set a modified date
         timer = Timer.scheduledTimer(timeInterval: latency, target: self, selector: #selector(update), userInfo: nil, repeats: true)//swift 3 upgrade
     }
     /**
      * Stop listening
      */
-    func stop(){
+    public func stop(){
         if timer != nil {timer!.invalidate()}
     }
     /**
