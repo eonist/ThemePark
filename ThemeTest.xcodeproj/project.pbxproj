@@ -15,12 +15,9 @@
 		F114AE4B21A6E0AE00942A28 /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F120F5AA206134690088CC57 /* ColorUtil.swift */; };
 		F114AE4C21A6E0AE00942A28 /* ColorTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F120F5AD206136CD0088CC57 /* ColorTypes.swift */; };
 		F114AE4D21A6E0AE00942A28 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F120F5AE206136CD0088CC57 /* Colors.swift */; };
-		F114AE4E21A6E0AE00942A28 /* Range+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F120F5B1206138840088CC57 /* Range+Extension.swift */; };
 		F114AE5021A6E0AE00942A28 /* ThemeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12BA158205D30A1006C1D56 /* ThemeUtil.swift */; };
 		F11ADD4F223470800024F9C7 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADD4E223470800024F9C7 /* Data+Extension.swift */; };
 		F11ADD512234709F0024F9C7 /* FileParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADD502234709F0024F9C7 /* FileParser.swift */; };
-		F11ADD53223471000024F9C7 /* StringParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADD52223471000024F9C7 /* StringParser.swift */; };
-		F11ADD56223471250024F9C7 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADD55223471250024F9C7 /* String+Extension.swift */; };
 		F11ADD5B2235113B0024F9C7 /* Themeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADD5A2235113B0024F9C7 /* Themeable.swift */; };
 		F11ADD5D2235118E0024F9C7 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADD5C2235118E0024F9C7 /* View+Extension.swift */; };
 		F11ADD5F2235128E0024F9C7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADD5E2235128E0024F9C7 /* Theme.swift */; };
@@ -38,17 +35,31 @@
 		F11ADD822235189F0024F9C7 /* Themeable +UINavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADD812235189F0024F9C7 /* Themeable +UINavBar.swift */; };
 		F11ADDCD22352D1D0024F9C7 /* DecodingTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADDC722352D1D0024F9C7 /* DecodingTypes.swift */; };
 		F11ADDCE22352D1D0024F9C7 /* DecodingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADDC822352D1D0024F9C7 /* DecodingHelpers.swift */; };
-		F11ADDCF22352D1D0024F9C7 /* ThemeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADDCA22352D1D0024F9C7 /* ThemeData.swift */; };
-		F11ADDD022352D1D0024F9C7 /* ThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADDCB22352D1D0024F9C7 /* ThemeColor.swift */; };
-		F11ADDD122352D1D0024F9C7 /* ThemeFontColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADDCC22352D1D0024F9C7 /* ThemeFontColor.swift */; };
-		F11ADDD322352D600024F9C7 /* ThemeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADDD222352D600024F9C7 /* ThemeFont.swift */; };
 		F11ADDD622353F290024F9C7 /* Hybrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADDD522353F290024F9C7 /* Hybrid.swift */; };
 		F11ADDD9223540C60024F9C7 /* ThemeDataKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADDD8223540C60024F9C7 /* ThemeDataKind.swift */; };
 		F11ADDDB22354FE40024F9C7 /* ThemeColorKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADDDA22354FE40024F9C7 /* ThemeColorKind.swift */; };
 		F11ADDDE2235530B0024F9C7 /* ThemeFontKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADDDD2235530B0024F9C7 /* ThemeFontKind.swift */; };
 		F11ADDE0223553740024F9C7 /* ThemeFontColorKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADDDF223553740024F9C7 /* ThemeFontColorKind.swift */; };
-		F11ADDE22235544B0024F9C7 /* CustomTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADDE12235544B0024F9C7 /* CustomTheme.swift */; };
 		F11ADDE42235675C0024F9C7 /* ThemeKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADDE32235675C0024F9C7 /* ThemeKind.swift */; };
+		F11ADDE622356ECE0024F9C7 /* ThemeUtil+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADDE522356ECE0024F9C7 /* ThemeUtil+Animation.swift */; };
+		F11ADDF02235718B0024F9C7 /* ThemePark_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = F11ADDEE2235718B0024F9C7 /* ThemePark_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F11ADDF5223571B30024F9C7 /* CustomTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADDE12235544B0024F9C7 /* CustomTheme.swift */; };
+		F11ADDF6223571B30024F9C7 /* ThemeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADDCA22352D1D0024F9C7 /* ThemeData.swift */; };
+		F11ADDF7223571B30024F9C7 /* ThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADDCB22352D1D0024F9C7 /* ThemeColor.swift */; };
+		F11ADDF8223571B30024F9C7 /* ThemeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADDD222352D600024F9C7 /* ThemeFont.swift */; };
+		F11ADDF9223571B30024F9C7 /* ThemeFontColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADDCC22352D1D0024F9C7 /* ThemeFontColor.swift */; };
+		F11ADDFA223571B30024F9C7 /* Theme+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F178DE1E205E8E2C001FD75E /* Theme+Styles.swift */; };
+		F11ADDFC2235789A0024F9C7 /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F120F5AA206134690088CC57 /* ColorUtil.swift */; };
+		F11ADDFD2235789A0024F9C7 /* ColorTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F120F5AD206136CD0088CC57 /* ColorTypes.swift */; };
+		F11ADDFE2235789A0024F9C7 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F120F5AE206136CD0088CC57 /* Colors.swift */; };
+		F11ADDFF223578AB0024F9C7 /* Hybrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADDD522353F290024F9C7 /* Hybrid.swift */; };
+		F11ADE00223578C40024F9C7 /* DecodingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADDC822352D1D0024F9C7 /* DecodingHelpers.swift */; };
+		F11ADE01223578C40024F9C7 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADD4E223470800024F9C7 /* Data+Extension.swift */; };
+		F11ADE02223578C40024F9C7 /* JSONUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F120F5A6206122520088CC57 /* JSONUtil.swift */; };
+		F11ADE03223578CC0024F9C7 /* FileParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADD502234709F0024F9C7 /* FileParser.swift */; };
+		F11ADE04223578CC0024F9C7 /* FileWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F114C2CE2062961D00C21A3D /* FileWatcher.swift */; };
+		F11ADE05223578CC0024F9C7 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADD5C2235118E0024F9C7 /* View+Extension.swift */; };
+		F11ADE06223578CC0024F9C7 /* VC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADD60223514380024F9C7 /* VC+Extension.swift */; };
 		F120F5A4206120EE0088CC57 /* assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F120F5A3206120EE0088CC57 /* assets.bundle */; };
 		F12BA144205D2BDA006C1D56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12BA143205D2BDA006C1D56 /* AppDelegate.swift */; };
 		F12BA149205D2BDA006C1D56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12BA147205D2BDA006C1D56 /* Main.storyboard */; };
@@ -89,8 +100,6 @@
 		F114C2CE2062961D00C21A3D /* FileWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWatcher.swift; sourceTree = "<group>"; };
 		F11ADD4E223470800024F9C7 /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
 		F11ADD502234709F0024F9C7 /* FileParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileParser.swift; sourceTree = "<group>"; };
-		F11ADD52223471000024F9C7 /* StringParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringParser.swift; sourceTree = "<group>"; };
-		F11ADD55223471250024F9C7 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		F11ADD5A2235113B0024F9C7 /* Themeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themeable.swift; sourceTree = "<group>"; };
 		F11ADD5C2235118E0024F9C7 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		F11ADD5E2235128E0024F9C7 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
@@ -119,12 +128,15 @@
 		F11ADDDF223553740024F9C7 /* ThemeFontColorKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeFontColorKind.swift; sourceTree = "<group>"; };
 		F11ADDE12235544B0024F9C7 /* CustomTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTheme.swift; sourceTree = "<group>"; };
 		F11ADDE32235675C0024F9C7 /* ThemeKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeKind.swift; sourceTree = "<group>"; };
+		F11ADDE522356ECE0024F9C7 /* ThemeUtil+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThemeUtil+Animation.swift"; sourceTree = "<group>"; };
+		F11ADDEC2235718B0024F9C7 /* ThemePark_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThemePark_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F11ADDEE2235718B0024F9C7 /* ThemePark_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThemePark_macOS.h; sourceTree = "<group>"; };
+		F11ADDEF2235718B0024F9C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F120F5A3206120EE0088CC57 /* assets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = assets.bundle; sourceTree = "<group>"; };
 		F120F5A6206122520088CC57 /* JSONUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONUtil.swift; sourceTree = "<group>"; };
 		F120F5AA206134690088CC57 /* ColorUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
 		F120F5AD206136CD0088CC57 /* ColorTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTypes.swift; sourceTree = "<group>"; };
 		F120F5AE206136CD0088CC57 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		F120F5B1206138840088CC57 /* Range+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Range+Extension.swift"; sourceTree = "<group>"; };
 		F12BA140205D2BDA006C1D56 /* ThemeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThemeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F12BA143205D2BDA006C1D56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F12BA148205D2BDA006C1D56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -139,6 +151,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		F114AE3821A6E06500942A28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F11ADDE92235718B0024F9C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -178,11 +197,9 @@
 			isa = PBXGroup;
 			children = (
 				F120F5AC206136CD0088CC57 /* color */,
-				F11ADD54223471180024F9C7 /* string */,
 				F11ADDD422352F280024F9C7 /* json */,
 				F11ADD502234709F0024F9C7 /* FileParser.swift */,
 				F114C2CE2062961D00C21A3D /* FileWatcher.swift */,
-				F120F5B1206138840088CC57 /* Range+Extension.swift */,
 				F11ADD5C2235118E0024F9C7 /* View+Extension.swift */,
 				F11ADD60223514380024F9C7 /* VC+Extension.swift */,
 				F11ADDD522353F290024F9C7 /* Hybrid.swift */,
@@ -190,19 +207,11 @@
 			path = common;
 			sourceTree = "<group>";
 		};
-		F11ADD54223471180024F9C7 /* string */ = {
-			isa = PBXGroup;
-			children = (
-				F11ADD52223471000024F9C7 /* StringParser.swift */,
-				F11ADD55223471250024F9C7 /* String+Extension.swift */,
-			);
-			path = string;
-			sourceTree = "<group>";
-		};
 		F11ADD57223510E50024F9C7 /* util */ = {
 			isa = PBXGroup;
 			children = (
 				F12BA158205D30A1006C1D56 /* ThemeUtil.swift */,
+				F11ADDE522356ECE0024F9C7 /* ThemeUtil+Animation.swift */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -302,6 +311,15 @@
 			path = deprecated;
 			sourceTree = "<group>";
 		};
+		F11ADDED2235718B0024F9C7 /* ThemePark-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				F11ADDEE2235718B0024F9C7 /* ThemePark_macOS.h */,
+				F11ADDEF2235718B0024F9C7 /* Info.plist */,
+			);
+			path = "ThemePark-macOS";
+			sourceTree = "<group>";
+		};
 		F120F5AC206136CD0088CC57 /* color */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,6 +337,7 @@
 				F114AE4821A6E08500942A28 /* src */,
 				F12BA142205D2BDA006C1D56 /* ThemeTest */,
 				F114AE3C21A6E06500942A28 /* ThemePark */,
+				F11ADDED2235718B0024F9C7 /* ThemePark-macOS */,
 				F12BA141205D2BDA006C1D56 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -328,6 +347,7 @@
 			children = (
 				F12BA140205D2BDA006C1D56 /* ThemeTest.app */,
 				F114AE3B21A6E06500942A28 /* ThemePark.framework */,
+				F11ADDEC2235718B0024F9C7 /* ThemePark_macOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -369,6 +389,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F11ADDE72235718B0024F9C7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F11ADDF02235718B0024F9C7 /* ThemePark_macOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -388,6 +416,24 @@
 			name = ThemePark;
 			productName = ThemePark;
 			productReference = F114AE3B21A6E06500942A28 /* ThemePark.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F11ADDEB2235718B0024F9C7 /* ThemePark-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F11ADDF12235718B0024F9C7 /* Build configuration list for PBXNativeTarget "ThemePark-macOS" */;
+			buildPhases = (
+				F11ADDE72235718B0024F9C7 /* Headers */,
+				F11ADDE82235718B0024F9C7 /* Sources */,
+				F11ADDE92235718B0024F9C7 /* Frameworks */,
+				F11ADDEA2235718B0024F9C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ThemePark-macOS";
+			productName = "ThemePark-macOS";
+			productReference = F11ADDEC2235718B0024F9C7 /* ThemePark_macOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F12BA13F205D2BDA006C1D56 /* ThemeTest */ = {
@@ -423,6 +469,10 @@
 						CreatedOnToolsVersion = 10.0;
 						ProvisioningStyle = Automatic;
 					};
+					F11ADDEB2235718B0024F9C7 = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+					};
 					F12BA13F205D2BDA006C1D56 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -444,12 +494,20 @@
 			targets = (
 				F12BA13F205D2BDA006C1D56 /* ThemeTest */,
 				F114AE3A21A6E06500942A28 /* ThemePark */,
+				F11ADDEB2235718B0024F9C7 /* ThemePark-macOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F114AE3921A6E06500942A28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F11ADDEA2235718B0024F9C7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -474,23 +532,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F11ADDD322352D600024F9C7 /* ThemeFont.swift in Sources */,
 				F11ADD61223514380024F9C7 /* VC+Extension.swift in Sources */,
 				F11ADD73223515DD0024F9C7 /* Themeable+UISwitch.swift in Sources */,
 				F114AE4B21A6E0AE00942A28 /* ColorUtil.swift in Sources */,
 				F11ADD80223518700024F9C7 /* Themeable +UITabBar.swift in Sources */,
 				F11ADDD622353F290024F9C7 /* Hybrid.swift in Sources */,
 				F11ADDCD22352D1D0024F9C7 /* DecodingTypes.swift in Sources */,
-				F114AE4E21A6E0AE00942A28 /* Range+Extension.swift in Sources */,
 				F11ADD5D2235118E0024F9C7 /* View+Extension.swift in Sources */,
-				F11ADD53223471000024F9C7 /* StringParser.swift in Sources */,
 				F11ADD75223515E90024F9C7 /* Themeable+UISegmentedControl.swift in Sources */,
 				F11ADD512234709F0024F9C7 /* FileParser.swift in Sources */,
 				F11ADD7B2235161B0024F9C7 /* Themeable+UITextField.swift in Sources */,
 				F11ADD6D223515A50024F9C7 /* Themeable+UIButton.swift in Sources */,
 				F11ADDCE22352D1D0024F9C7 /* DecodingHelpers.swift in Sources */,
 				F11ADDE0223553740024F9C7 /* ThemeFontColorKind.swift in Sources */,
-				F11ADDE22235544B0024F9C7 /* CustomTheme.swift in Sources */,
 				F11ADD6F223515C00024F9C7 /* Themeable+UILabel.swift in Sources */,
 				F11ADDE42235675C0024F9C7 /* ThemeKind.swift in Sources */,
 				F114AE4D21A6E0AE00942A28 /* Colors.swift in Sources */,
@@ -498,13 +552,10 @@
 				F11ADDDE2235530B0024F9C7 /* ThemeFontKind.swift in Sources */,
 				F11ADD71223515D20024F9C7 /* Themeable+UITableViewCell.swift in Sources */,
 				F114AE4921A6E0AE00942A28 /* FileWatcher.swift in Sources */,
-				F11ADD56223471250024F9C7 /* String+Extension.swift in Sources */,
+				F11ADDE622356ECE0024F9C7 /* ThemeUtil+Animation.swift in Sources */,
 				F11ADD822235189F0024F9C7 /* Themeable +UINavBar.swift in Sources */,
 				F114AE4A21A6E0AE00942A28 /* JSONUtil.swift in Sources */,
-				F11ADDCF22352D1D0024F9C7 /* ThemeData.swift in Sources */,
 				F114AE4C21A6E0AE00942A28 /* ColorTypes.swift in Sources */,
-				F11ADDD022352D1D0024F9C7 /* ThemeColor.swift in Sources */,
-				F11ADDD122352D1D0024F9C7 /* ThemeFontColor.swift in Sources */,
 				F11ADDDB22354FE40024F9C7 /* ThemeColorKind.swift in Sources */,
 				F11ADD4F223470800024F9C7 /* Data+Extension.swift in Sources */,
 				F11ADD5B2235113B0024F9C7 /* Themeable.swift in Sources */,
@@ -516,13 +567,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F11ADDE82235718B0024F9C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F11ADE03223578CC0024F9C7 /* FileParser.swift in Sources */,
+				F11ADE00223578C40024F9C7 /* DecodingHelpers.swift in Sources */,
+				F11ADE05223578CC0024F9C7 /* View+Extension.swift in Sources */,
+				F11ADDFD2235789A0024F9C7 /* ColorTypes.swift in Sources */,
+				F11ADDFE2235789A0024F9C7 /* Colors.swift in Sources */,
+				F11ADDFF223578AB0024F9C7 /* Hybrid.swift in Sources */,
+				F11ADE04223578CC0024F9C7 /* FileWatcher.swift in Sources */,
+				F11ADE06223578CC0024F9C7 /* VC+Extension.swift in Sources */,
+				F11ADDFC2235789A0024F9C7 /* ColorUtil.swift in Sources */,
+				F11ADE01223578C40024F9C7 /* Data+Extension.swift in Sources */,
+				F11ADE02223578C40024F9C7 /* JSONUtil.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F12BA13C205D2BDA006C1D56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F11ADDF9223571B30024F9C7 /* ThemeFontColor.swift in Sources */,
 				F178DE1D205E878B001FD75E /* Main.swift in Sources */,
+				F11ADDFA223571B30024F9C7 /* Theme+Styles.swift in Sources */,
+				F11ADDF6223571B30024F9C7 /* ThemeData.swift in Sources */,
 				F178DE21205EB232001FD75E /* Settings.swift in Sources */,
+				F11ADDF8223571B30024F9C7 /* ThemeFont.swift in Sources */,
+				F11ADDF5223571B30024F9C7 /* CustomTheme.swift in Sources */,
 				F12BA144205D2BDA006C1D56 /* AppDelegate.swift in Sources */,
+				F11ADDF7223571B30024F9C7 /* ThemeColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,6 +683,67 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F11ADDF22235718B0024F9C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "ThemePark-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.futurelab.ThemePark-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F11ADDF32235718B0024F9C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "ThemePark-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.futurelab.ThemePark-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -760,6 +896,15 @@
 			buildConfigurations = (
 				F114AE4421A6E06500942A28 /* Debug */,
 				F114AE4521A6E06500942A28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F11ADDF12235718B0024F9C7 /* Build configuration list for PBXNativeTarget "ThemePark-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F11ADDF22235718B0024F9C7 /* Debug */,
+				F11ADDF32235718B0024F9C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,3 +1,4 @@
+#if os(iOS)
 import UIKit
 
 extension UILabel:Themeable{
@@ -5,3 +6,4 @@ extension UILabel:Themeable{
       textColor = Theme.theme.color.font.highlight
    }
 }
+#endif

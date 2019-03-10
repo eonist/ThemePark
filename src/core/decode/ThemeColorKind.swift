@@ -1,9 +1,9 @@
-import UIKit
+import Foundation
 
 public protocol ThemeColorKind {
-   var foreground:UIColor {get}
-   var middleground:UIColor {get}
-   var background:UIColor {get}
-   var tint:UIColor {get}
+   var foreground:Color {get}
+   var middleground:Color {get}
+   var background:Color {get}
+   var tint:Color {get}
    var font:ThemeFontColorKind {get}
 }

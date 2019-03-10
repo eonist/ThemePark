@@ -1,3 +1,4 @@
+#if os(iOS)
 import UIKit
 
 extension UITextField:Themeable{
@@ -8,3 +9,4 @@ extension UITextField:Themeable{
       font = Theme.theme.font.system
    }
 }
+#endif

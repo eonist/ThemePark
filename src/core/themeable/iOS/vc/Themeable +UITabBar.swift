@@ -1,3 +1,5 @@
+#if os(iOS)
+
 import UIKit
 
 /*Tab Bar:*/
@@ -9,3 +11,4 @@ extension UITabBar:Themeable{
       self.layoutIfNeeded()
    }
 }
+#endif

@@ -1,6 +1,6 @@
-import UIKit
+import Foundation
 
 public protocol ThemeFontColorKind{
-   var highlight:UIColor {get}
-   var disabled:UIColor {get}
+   var highlight:Color {get}
+   var disabled:Color {get}
 }

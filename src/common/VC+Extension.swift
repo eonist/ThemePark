@@ -1,3 +1,7 @@
+#if os(iOS)
+
+
+
 import UIKit
 /**
  * VC
@@ -24,7 +28,7 @@ extension UIApplication {
       return self.keyWindow?.rootViewController?.topMostViewController()
    }
 }
-
+#endif
 //        if let navigation = self.presentedViewController as? UINavigationController {
 //            if let visibleController = navigation.visibleViewController {
 //                return visibleController.topMostViewController()

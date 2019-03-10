@@ -1,3 +1,5 @@
+#if os(iOS)
+
 import UIKit
 
 extension UITableViewCell:Themeable{
@@ -7,3 +9,4 @@ extension UITableViewCell:Themeable{
    }
 }
 
+#endif

@@ -1,4 +1,9 @@
 import Foundation
+#if os(iOS)
+import ThemePark
+#elseif os(macOS)
+import ThemePark_macOS
+#endif
 
 public class CustomTheme:Theme{
    public enum ThemeType:String {case light, dark}// ⚠️️ delete this

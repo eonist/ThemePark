@@ -1,11 +1,13 @@
+#if os(iOS)
+
 import UIKit
 
 /*navBar*/
 extension UINavigationBar:Themeable{
    func apply(){
       self.barTintColor = Theme.theme.color.background
-      //TODO: ⚠️️ this shuldnt be hardcode like this 
-      self.barStyle = (CustomTheme.currentType == CustomTheme.ThemeType.dark.rawValue ? .black : .default)
+      //TODO: ⚠️️ this shuldnt be hardcode like this , try storing the actual style somehow?
+      self.barStyle = (Theme.currentType == "dark" ? .black : .default)
       let navBarTitleColor:UIColor = Theme.theme.color.font.highlight
       self.titleTextAttributes = [NSAttributedString.Key.foregroundColor: navBarTitleColor]
       self.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: navBarTitleColor]
@@ -13,3 +15,4 @@ extension UINavigationBar:Themeable{
       self.layoutIfNeeded()
    }
 }
+#endif

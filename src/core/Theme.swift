@@ -3,7 +3,7 @@ import Foundation
  * Make this more extensiable for overriding, use string instead of enum
  * - TODO: ⚠️️ needs refactoring, use didset etc. simplify, use singlton if needed 
  */
-public class Theme:ThemeKind{
+open class Theme:ThemeKind{
    private static var _theme:ThemeDataKind?
    /**
     * Override this in subClass

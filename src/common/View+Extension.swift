@@ -1,6 +1,6 @@
-import UIKit
+import Foundation
 
-extension UIView{
+extension View{
    /**
     * Traverses the entire UIView hirearchy and collects views that are of speccific PARAM: type
     */

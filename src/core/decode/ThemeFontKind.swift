@@ -1,6 +1,6 @@
-import UIKit
+import Foundation
 
 public protocol ThemeFontKind{
-   var system:UIFont {get}
-   var systemBold:UIFont {get}
+   var system:Font {get}
+   var systemBold:Font {get}
 }

@@ -1,6 +1,4 @@
-import UIKit
-
-
+import Foundation
 /**
  * Utility methods (Apply theme to View and ViewController)
  */
@@ -8,36 +6,15 @@ public class ThemeUtil{
    /**
     * Applies a ThemeType to a UIView hierarchy (only affects UIViews that extends Themeable)
     */
-   public static func apply(_ view:UIView){
+   public static func apply(_ view:View){
       let themeables:[Themeable] = view.descendants() + (view is Themeable ? [view as! Themeable]: [])//add it view to the array if it is also themeable
       themeables.forEach{ $0.apply() }
    }
    /**
     * For Controllers that are not a View it self
     */
-   public static func apply(_ viewController:UIViewController){
+   public static func apply(_ viewController:ViewController){
       (viewController as? Themeable)?.apply()
       apply(viewController.view)
-   }
-}
-/**
- * Animation
- */
-extension ThemeUtil{
-   /**
-    * Collects all Themeable views, And initiates "from, to" animation
-    */
-   public static func transition(_ view:UIView){
-      UIView.animate(withDuration: Theme.transitionDur, animations: {
-         apply(view)
-      }, completion: nil)
-   }
-   /**
-    * For Controllers that are not a View it self
-    */
-   public static func transition(_ viewController:UIViewController){
-      UIView.animate(withDuration: Theme.transitionDur, animations: {
-         apply(viewController)
-      }, completion: nil)
    }
 }

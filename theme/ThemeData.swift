@@ -1,4 +1,9 @@
 import Foundation
+#if os(iOS)
+import ThemePark
+#elseif os(macOS)
+import ThemePark_macOS
+#endif
 /**
  * ThemeData
  */
@@ -6,11 +11,6 @@ public struct ThemeData:Decodable,ThemeDataKind{
    enum  CodingKeys: String, CodingKey { case color,font }/*CodingKeys are required when you want to customize your json parsing*/
    public var font: ThemeFontKind
    public var color: ThemeColorKind
-   //rename to ThemeData
-//   public let color:ThemeColor//rename to colors
-  
-   //      color = try container.decode(key: .color, transformer: UIFontTransformer())
-   //      font = try container.decode(key: .font, transformer: UIFontTransformer())
    /**
     * - Note: When you use Protocols as variable kind, the auto init doesnt work, so we have to decode it manually
     * - Note: Using "Variable kinds" makes Theme extensiable

@@ -1,3 +1,4 @@
+#if os(iOS)
 import UIKit
 /**
  * TODO: ⚠️️ Store these theme extensions centrally?
@@ -9,3 +10,4 @@ extension UITableViewController:Themeable{
       navigationController?.navigationBar.apply()
    }
 }
+#endif

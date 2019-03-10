@@ -1,5 +1,5 @@
+#if os(iOS)
 import UIKit
-
 
 extension UIButton:Themeable{
    /**
@@ -9,3 +9,4 @@ extension UIButton:Themeable{
       setTitleColor(Theme.theme.color.font.highlight, for: .normal)
    }
 }
+#endif

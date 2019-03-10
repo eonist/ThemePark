@@ -1,3 +1,5 @@
+#if os(iOS)
+
 import UIKit
 extension UISwitch:Themeable{
    /**
@@ -8,3 +10,4 @@ extension UISwitch:Themeable{
       self.backgroundColor = Theme.theme.color.background
    }
 }
+#endif

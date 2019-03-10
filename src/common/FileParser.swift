@@ -1,6 +1,6 @@
 import Foundation
 
-class FileParser{
+public class FileParser{
    /**
     * Returns string content from a file at file location "path"
     * PARAM: path is the file path to the file in this format: (User/John/Desktop/test.txt)
@@ -11,9 +11,9 @@ class FileParser{
     * let content = String.stringWithContentsOfFile(path, encoding: NSUTF8StringEncoding, error: &err)
     * EXAMPLE: FileParser.content("~/Desktop/temp.txt".tildePath)//
     */
-   static func content(path:String) -> String?{
+   public static func content(path:String) -> String?{
       do {
-         let content = try String(contentsOfFile:path, encoding:String.Encoding.utf8) as String//encoding: NSUTF8StringEncoding
+         let content = try String(contentsOfFile:path, encoding:.utf8) as String//encoding: NSUTF8StringEncoding
          return content
       } catch {
          return nil
@@ -22,7 +22,7 @@ class FileParser{
    /**
     * New
     */
-   static func data(path:String) -> Data?{
+   public static func data(path:String) -> Data?{
       guard let str:String = FileParser.content(path: path) else {return nil}
       return str.data(using: .utf8)
    }

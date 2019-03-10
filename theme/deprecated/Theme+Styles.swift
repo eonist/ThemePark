@@ -1,4 +1,4 @@
-import UIKit
+import Foundation
 /**
  * Light theme (If you want to use struct instead of json, not part of core, add to your own app)
  */

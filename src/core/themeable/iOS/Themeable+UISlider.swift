@@ -1,3 +1,5 @@
+#if os(iOS)
+
 import UIKit
 
 extension UISlider:Themeable{
@@ -5,4 +7,4 @@ extension UISlider:Themeable{
       self.tintColor = Theme.theme.color.tint
    }
 }
-
+#endif

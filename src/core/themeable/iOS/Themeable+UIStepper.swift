@@ -1,3 +1,4 @@
+#if os(iOS)
 import UIKit
 
 extension UIStepper:Themeable{
@@ -5,3 +6,4 @@ extension UIStepper:Themeable{
       self.tintColor = Theme.theme.color.tint
    }
 }
+#endif

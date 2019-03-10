@@ -1,3 +1,5 @@
+#if os(iOS)
+
 import UIKit
 
 extension UISegmentedControl:Themeable{
@@ -5,3 +7,4 @@ extension UISegmentedControl:Themeable{
       self.tintColor = Theme.theme.color.tint
    }
 }
+#endif
