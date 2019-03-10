@@ -22,5 +22,5 @@ Theme library for iOS
 - CocoaPod (Coming soon)
 
 ### Todo:
-- Clean up the code ✨
-- Add OliverAtkinsons (from swift-lang) nifty JSON Transformer trick: [http://eon.codes/blog/2018/04/12/advance-json-parsing-pt1/](http://eon.codes/blog/2018/04/12/advance-json-parsing-pt1/) 👊 
+- Clean up the code ✅
+- Add OliverAtkinsons (from swift-lang) nifty JSON Transformer trick: [http://eon.codes/blog/2018/04/12/advance-json-parsing-pt1/](http://eon.codes/blog/2018/04/12/advance-json-parsing-pt1/) 👊 ✅
