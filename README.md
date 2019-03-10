@@ -12,7 +12,7 @@ Theme library for iOS
 - Watches for changes 💥
 - Live theme updates while the app is running 👌
 - Traverses the entire UIView hierarchy with one call 🤯
-- Animated transitions film 🎬
+- Animated transitions 🎬
 - Small foot-print 🗜
 - Store styles in json or struct
 
