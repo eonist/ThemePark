@@ -1,17 +1,21 @@
 import UIKit
 /**
- * - Note: the variables are decoded to underscore naming and read from app w/o underscore
+ * UIColor
  */
 struct ThemeColor:Decodable{
-   private let _foreground:String
-   private let _middleground:String
-   private let _background:String
-   private let _tint:String
+   enum CodingKeys: String, CodingKey { case foreground,middleground,background,tint,font }/*CodingKeys are required when you want to customize your json parsing*/
+   var foreground:UIColor
+   var middleground:UIColor
+   var background:UIColor
+   var tint:UIColor
    let font:ThemeFontColor
+   init(from decoder: Decoder) throws {
+      let container = try decoder.container(keyedBy: CodingKeys.self)
+      foreground = try container.decode(key: .foreground, transformer: ColorTransformer())
+      middleground = try container.decode(key: .middleground, transformer: ColorTransformer())
+      background = try container.decode(key: .background, transformer: ColorTransformer())
+      tint = try container.decode(key: .tint, transformer: ColorTransformer())
+      font = try container.decode(ThemeFontColor.self, forKey: .font)
+   }
 }
-extension ThemeColor{
-   var foreground:UIColor {return ColorUtils.color(_foreground)}
-   var middleground:UIColor {return ColorUtils.color(_middleground)}
-   var background:UIColor {return ColorUtils.color(_background)}
-   var tint:UIColor {return ColorUtils.color(_tint)}
-}
+

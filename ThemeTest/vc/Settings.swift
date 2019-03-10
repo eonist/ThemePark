@@ -3,8 +3,8 @@ import ThemePark
 
 class SettingsController:UITableViewController {
     @IBAction func onSwitchChange(_ sender: UISwitch) {
-        Config.curThemeType = sender.isOn ? .dark : .light
-        Config.theme = Config.getTheme(Config.curThemeType)
+        Theme.curThemeType = sender.isOn ? .dark : .light
+        Theme.theme = Theme.getTheme(Theme.curThemeType)
         ThemeUtil.transition(self)
     }
 }

@@ -4,7 +4,7 @@ import UIKit
  */
 extension UITableViewController:Themeable{
    func apply(){
-      self.tableView.backgroundColor = Config.theme.color.background
+      self.tableView.backgroundColor = Theme.theme.color.background
       tabBarController?.tabBar.apply()
       navigationController?.navigationBar.apply()
    }

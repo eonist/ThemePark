@@ -1,6 +1,6 @@
 import UIKit
 /**
- * Light theme
+ * Light theme (If you want to use struct instead of json)
  */
 //struct LightTheme:ThemeProtocol{
 //    let color:ColorProtocol = Color()

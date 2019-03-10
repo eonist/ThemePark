@@ -5,6 +5,6 @@ extension UISwitch:Themeable{
     */
    func apply() {
       self.layer.cornerRadius = 16.0
-      self.backgroundColor = Config.theme.color.background
+      self.backgroundColor = Theme.theme.color.background
    }
 }

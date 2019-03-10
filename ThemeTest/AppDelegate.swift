@@ -12,7 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FileWatcher.init(Bundle.main.resourcePath!+"/assets.bundle/dark.json") {
             Swift.print("the file was modified")
             if let controller = AppDelegate.curViewController {
-                Config.theme = Config.getTheme(Config.curThemeType)//update the theme
+                Theme.theme = Theme.getTheme(Theme.curThemeType)//update the theme
                 ThemeUtil.apply(controller)
             }
         }.start()

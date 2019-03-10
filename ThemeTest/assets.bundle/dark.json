@@ -1,16 +1,16 @@
 {
    "color":{
-      "_foreground":"gray",
-      "_middleground":"gray",
-      "_background":"black",
-      "_tint":"yellow",
+      "foreground":"gray",
+      "middleground":"gray",
+      "background":"black",
+      "tint":"yellow",
       "font":{
-         "_highlight":"white",
-         "_disabled":"black"
+         "highlight":"white",
+         "disabled":"black"
       }
    },
    "font":{
-      "_system":{"name":".SFUIText","size":18},
-      "_systemBold":{"name":".SFUIText-Semibold","size":18}
+      "system":{"name":".SFUIText","size":"18"},
+      "systemBold":{"name":".SFUIText-Semibold","size":"18"}
    }
 }

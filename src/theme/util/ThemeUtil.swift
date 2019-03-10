@@ -10,9 +10,7 @@ public class ThemeUtil{
     */
    public static func apply(_ view:UIView){
       let themeables:[Themeable] = view.descendants() + (view is Themeable ? [view as! Themeable]: [])//add it view to the array if it is also themeable
-      themeables.forEach{
-         $0.apply()
-      }
+      themeables.forEach{ $0.apply() }
    }
    /**
     * For Controllers that are not a View it self
@@ -25,7 +23,7 @@ public class ThemeUtil{
     * Collects all Themeable views, And initiates "from, to" animation
     */
    public static func transition(_ view:UIView){
-      UIView.animate(withDuration: Config.transitionDuration, animations: {
+      UIView.animate(withDuration: Theme.transitionDuration, animations: {
          apply(view)
       }, completion: nil)
    }
@@ -33,7 +31,7 @@ public class ThemeUtil{
     * For Controllers that are not a View it self
     */
    public static func transition(_ viewController:UIViewController){
-      UIView.animate(withDuration: Config.transitionDuration, animations: {
+      UIView.animate(withDuration: Theme.transitionDuration, animations: {
          apply(viewController)
       }, completion: nil)
    }
