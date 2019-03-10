@@ -4,7 +4,8 @@ import UIKit
 extension UINavigationBar:Themeable{
    func apply(){
       self.barTintColor = Theme.theme.color.background
-      self.barStyle = (Theme.curThemeType == .dark ? .black : .default)
+      //TODO: ⚠️️ this shuldnt be hardcode like this 
+      self.barStyle = (CustomTheme.currentType == CustomTheme.ThemeType.dark.rawValue ? .black : .default)
       let navBarTitleColor:UIColor = Theme.theme.color.font.highlight
       self.titleTextAttributes = [NSAttributedString.Key.foregroundColor: navBarTitleColor]
       self.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: navBarTitleColor]

@@ -2,7 +2,7 @@ import UIKit
 
 
 /**
- * Utility methods
+ * Utility methods (Apply theme to View and ViewController)
  */
 public class ThemeUtil{
    /**
@@ -19,11 +19,16 @@ public class ThemeUtil{
       (viewController as? Themeable)?.apply()
       apply(viewController.view)
    }
+}
+/**
+ * Animation
+ */
+extension ThemeUtil{
    /**
     * Collects all Themeable views, And initiates "from, to" animation
     */
    public static func transition(_ view:UIView){
-      UIView.animate(withDuration: Theme.transitionDuration, animations: {
+      UIView.animate(withDuration: Theme.transitionDur, animations: {
          apply(view)
       }, completion: nil)
    }
@@ -31,7 +36,7 @@ public class ThemeUtil{
     * For Controllers that are not a View it self
     */
    public static func transition(_ viewController:UIViewController){
-      UIView.animate(withDuration: Theme.transitionDuration, animations: {
+      UIView.animate(withDuration: Theme.transitionDur, animations: {
          apply(viewController)
       }, completion: nil)
    }

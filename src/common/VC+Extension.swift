@@ -20,7 +20,7 @@ extension UIViewController {
  * App
  */
 extension UIApplication {
-   func topMostViewController() -> UIViewController? {
+   public func topMostViewController() -> UIViewController? {
       return self.keyWindow?.rootViewController?.topMostViewController()
    }
 }
