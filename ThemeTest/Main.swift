@@ -5,7 +5,7 @@ class Main:UITableViewController{
     private var list:[String] = ["red","blue","green"]
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        ThemeUtils.apply(self)
+        ThemeUtil.apply(self)
     }
 }
 /**

@@ -7,6 +7,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     static var curViewController:UITableViewController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {// Override point for customization after application launch.
+//        Swift.print("UIFont.systemFont(ofSize: 18).fontName:  \(UIFont.boldSystemFont(ofSize: 18))")
+        Swift.print(Bundle.main.resourcePath!+"/assets.bundle/dark.json")
+        FileWatcher.init(Bundle.main.resourcePath!+"/assets.bundle/dark.json") {
+            Swift.print("the file was modified")
+            if let controller = AppDelegate.curViewController {
+                Config.theme = Config.getTheme(Config.curThemeType)//update the theme
+                ThemeUtil.apply(controller)
+            }
+        }.start()
+        return true
+    }
+}
+
+
+
 //        _ = {
 //            Swift.print(Bundle.main.resourcePath!+"/assets.bundle/theme.json")
 //            func content(_ path:String)->String?{
@@ -27,42 +42,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            Swift.print("theme?.color.font.highlight:  \(theme?.color.font.highlight)")
 //        }
         
-//        Swift.print("UIFont.systemFont(ofSize: 18).fontName:  \(UIFont.boldSystemFont(ofSize: 18))")
-        Swift.print(Bundle.main.resourcePath!+"/assets.bundle/dark.json")
-        
-        FileWatcher.init(Bundle.main.resourcePath!+"/assets.bundle/dark.json") {
-            Swift.print("the file was modified")
-            if let controller = AppDelegate.curViewController {
-                theme = getTheme(curThemeType)//update the theme
-                ThemeUtils.apply(controller)
-            }
-        }.start()
-        return true
-    }
-}
-
-extension UIViewController {
-    func topMostViewController() -> UIViewController {
-//        if let navigation = self.presentedViewController as? UINavigationController {
-//            if let visibleController = navigation.visibleViewController {
-//                return visibleController.topMostViewController()
-//            }
-//        }
-        if let tab = self.presentedViewController as? UITabBarController {
-            if let selectedTab = tab.selectedViewController {
-                return selectedTab.topMostViewController()
-            }
-            return tab.topMostViewController()
-        }
-        if self.presentedViewController == nil {
-            return self
-        }
-        return self.presentedViewController!.topMostViewController()
-    }
-}
-
-extension UIApplication {
-    func topMostViewController() -> UIViewController? {
-        return self.keyWindow?.rootViewController?.topMostViewController()
-    }
-}
