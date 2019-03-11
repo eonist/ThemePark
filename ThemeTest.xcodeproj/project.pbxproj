@@ -94,6 +94,8 @@
 		F11ADE38223676040024F9C7 /* assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F11ADE342236733B0024F9C7 /* assets.bundle */; };
 		F11ADE5D2236B5500024F9C7 /* Themeable+NSVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADE5C2236B5500024F9C7 /* Themeable+NSVC.swift */; };
 		F11ADE5E2236B5500024F9C7 /* Themeable+NSVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADE5C2236B5500024F9C7 /* Themeable+NSVC.swift */; };
+		F11ADE602236B71E0024F9C7 /* Themeable+UIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADE5F2236B71E0024F9C7 /* Themeable+UIVC.swift */; };
+		F11ADE612236B71E0024F9C7 /* Themeable+UIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADE5F2236B71E0024F9C7 /* Themeable+UIVC.swift */; };
 		F12BA144205D2BDA006C1D56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12BA143205D2BDA006C1D56 /* AppDelegate.swift */; };
 		F12BA149205D2BDA006C1D56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12BA147205D2BDA006C1D56 /* Main.storyboard */; };
 		F12BA14B205D2BDA006C1D56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F12BA14A205D2BDA006C1D56 /* Assets.xcassets */; };
@@ -173,6 +175,7 @@
 		F11ADE2A2236723A0024F9C7 /* ThemePark_example_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ThemePark_example_macOS.entitlements; sourceTree = "<group>"; };
 		F11ADE342236733B0024F9C7 /* assets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = assets.bundle; sourceTree = "<group>"; };
 		F11ADE5C2236B5500024F9C7 /* Themeable+NSVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Themeable+NSVC.swift"; sourceTree = "<group>"; };
+		F11ADE5F2236B71E0024F9C7 /* Themeable+UIVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Themeable+UIVC.swift"; sourceTree = "<group>"; };
 		F120F5A6206122520088CC57 /* JSONUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONUtil.swift; sourceTree = "<group>"; };
 		F120F5AA206134690088CC57 /* ColorUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
 		F120F5AD206136CD0088CC57 /* ColorTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTypes.swift; sourceTree = "<group>"; };
@@ -290,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				F11ADD7C223516870024F9C7 /* Themeable +UITVC.swift */,
+				F11ADE5F2236B71E0024F9C7 /* Themeable+UIVC.swift */,
 				F11ADD7F223518700024F9C7 /* Themeable +UITabBar.swift */,
 				F11ADD812235189F0024F9C7 /* Themeable +UINavBar.swift */,
 			);
@@ -664,6 +668,7 @@
 				F11ADD7D223516870024F9C7 /* Themeable +UITVC.swift in Sources */,
 				F114AE5021A6E0AE00942A28 /* ThemeUtil.swift in Sources */,
 				F11ADD77223515FB0024F9C7 /* Themeable+UISlider.swift in Sources */,
+				F11ADE602236B71E0024F9C7 /* Themeable+UIVC.swift in Sources */,
 				F11ADE5D2236B5500024F9C7 /* Themeable+NSVC.swift in Sources */,
 				F11ADD792235160F0024F9C7 /* Themeable+UIStepper.swift in Sources */,
 				F11ADD5F2235128E0024F9C7 /* Theme.swift in Sources */,
@@ -704,6 +709,7 @@
 				F11ADE112236716C0024F9C7 /* Themeable +UITabBar.swift in Sources */,
 				F11ADE01223578C40024F9C7 /* Data+Extension.swift in Sources */,
 				F11ADE0C223671550024F9C7 /* ThemeColorKind.swift in Sources */,
+				F11ADE612236B71E0024F9C7 /* Themeable+UIVC.swift in Sources */,
 				F11ADE5E2236B5500024F9C7 /* Themeable+NSVC.swift in Sources */,
 				F11ADE02223578C40024F9C7 /* JSONUtil.swift in Sources */,
 				F11ADE132236716C0024F9C7 /* Themeable+UIButton.swift in Sources */,
