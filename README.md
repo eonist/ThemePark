@@ -21,6 +21,19 @@ Theme library for iOS
 - Manual Open `Spatial.xcodeproj`
 - CocoaPod (Coming soon)
 
+### Topology:
+    .
+    ├── assets.bundle         # .json theme files
+    ├── theme                 # Customize your theme structure
+    ├── ThemePark             # iOS app code
+    ├── ThemePark-example     # macOS app code
+    └── src                   # Core-src
+         ├── common           # Util-Extensions
+         ├── core             # Core code
+               └── decode     # Decode JSON to Color and Font
+               └── util       # Apply theme to components
+               └── themeable  # Components that are themeable
+
 ### Todo:
 - Clean up the code ✅
 - Add OliverAtkinsons (from swift-lang) nifty JSON Transformer trick: [http://eon.codes/blog/2018/04/12/advance-json-parsing-pt1/](http://eon.codes/blog/2018/04/12/advance-json-parsing-pt1/) 👊 ✅
