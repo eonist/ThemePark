@@ -14,7 +14,7 @@ public class ThemeUtil{// rename to Themer?  ThemeApplier?
     * For Controllers that are not a View it self
     */
    public static func apply(_ viewController:ViewController){
-      (viewController as? Themeable)?.apply()
+      viewController.apply()
       apply(viewController.view)
    }
 }

@@ -3,8 +3,8 @@ import UIKit
 /**
  * TODO: ⚠️️ Store these theme extensions centrally?
  */
-extension UITableViewController:Themeable{
-   public func apply(){
+extension UITableViewController{
+   public override func apply(){
       self.tableView.backgroundColor = Theme.theme.color.background
       tabBarController?.tabBar.apply()
       navigationController?.navigationBar.apply()

@@ -3,9 +3,9 @@ import UIKit
 /**
  * TODO: ⚠️️ Store these theme extensions centrally?
  */
-extension NSViewController:Themeable{
-   public func apply(){
-      self.backgroundColor = Theme.theme.color.background
+extension UIViewController:Themeable{
+   @objc public func apply(){
+      self.view.backgroundColor = Theme.theme.color.background
    }
 }
 #endif
