@@ -29,9 +29,9 @@ Theme library for iOS
     ├── ThemePark-example     # macOS app code
     └── src                   # Core-src
          ├── common           # Util-Extensions
-         ├── core             # Core code
-               └── decode     # Decode JSON to Color and Font
-               └── util       # Apply theme to components
+         └── core             # Core code
+               ├── decode     # Decode JSON to Color and Font
+               ├── util       # Apply theme to components
                └── themeable  # Components that are themeable
 
 ### Todo:
