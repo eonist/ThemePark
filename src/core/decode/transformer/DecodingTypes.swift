@@ -20,7 +20,9 @@ public struct ColorTransformer: DecodingContainerTransformer {
 public struct UIFontTransformer: DecodingContainerTransformer {
    enum Error: Swift.Error {  case cannotCreateFont(name: [String:String]) }
    public func decode(input:[String:String]) throws -> Font {
-      guard let name = input["name"], let fontSize = input["size"], let fontSizeAsDouble = Double(fontSize), let font = Font.init(name: name, size: CGFloat(fontSizeAsDouble)) else {
+      guard let name = input["name"], let fontSize = input["size"],
+         let fontSizeAsDouble = Double(fontSize),
+         let font = Font.init(name: name, size: CGFloat(fontSizeAsDouble)) else {
          throw Error.cannotCreateFont(name: input)
       }
       return font

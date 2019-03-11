@@ -10,7 +10,7 @@
       }
    },
    "font":{
-      "system":{"name":".SFUIText","size":"18"},
-      "systemBold":{"name":".SFUIText-Semibold","size":"18"}
+      "system":{"name":"Helvetica","size":"18"},
+      "systemBold":{"name":"Helvetica-Bold","size":"18"}
    }
 }
