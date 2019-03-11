@@ -2,7 +2,7 @@ import Foundation
 /**
  * Utility methods (Apply theme to View and ViewController)
  */
-public class ThemeUtil{
+public class ThemeUtil{// rename to Themer?  ThemeApplier? 
    /**
     * Applies a ThemeType to a UIView hierarchy (only affects UIViews that extends Themeable)
     */

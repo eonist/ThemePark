@@ -4,7 +4,9 @@ import ThemePark
 #elseif os(macOS)
 import ThemePark_macOS
 #endif
-
+/**
+ * TODO: ⚠️️ make something called DefaultTheme that you can extend, copying customTheme is a drag for testing
+ */
 public class CustomTheme:Theme{
    public enum ThemeType:String {case light, dark}// ⚠️️ delete this
    override public class func getTheme(theme:String) -> ThemeDataKind {

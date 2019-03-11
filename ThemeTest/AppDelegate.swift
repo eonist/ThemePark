@@ -9,7 +9,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //      Swift.print("\(Font.boldSystemFont(ofSize: 30))")
       /*Set the customTheme, before components ask Theme for styling*/
       
-      CustomTheme.setTheme(themeType: CustomTheme.ThemeType.light.rawValue)//update the theme
+      CustomTheme.setTheme(themeType: CustomTheme.ThemeType.light.rawValue)//set init theme
       /*Watches for changes, super useful for testing styling by just changing the json doc*/
       FileWatcher.init(Bundle.main.resourcePath!+"/assets.bundle/dark.json") {
          Swift.print("the file was modified")
