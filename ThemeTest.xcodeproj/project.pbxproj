@@ -60,6 +60,27 @@
 		F11ADE04223578CC0024F9C7 /* FileWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F114C2CE2062961D00C21A3D /* FileWatcher.swift */; };
 		F11ADE05223578CC0024F9C7 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADD5C2235118E0024F9C7 /* View+Extension.swift */; };
 		F11ADE06223578CC0024F9C7 /* VC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADD60223514380024F9C7 /* VC+Extension.swift */; };
+		F11ADE07223671230024F9C7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADD5E2235128E0024F9C7 /* Theme.swift */; };
+		F11ADE08223671300024F9C7 /* ThemeKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADDE32235675C0024F9C7 /* ThemeKind.swift */; };
+		F11ADE09223671440024F9C7 /* DecodingTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADDC722352D1D0024F9C7 /* DecodingTypes.swift */; };
+		F11ADE0A2236714B0024F9C7 /* ThemeDataKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADDD8223540C60024F9C7 /* ThemeDataKind.swift */; };
+		F11ADE0B2236714F0024F9C7 /* ThemeFontColorKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADDDF223553740024F9C7 /* ThemeFontColorKind.swift */; };
+		F11ADE0C223671550024F9C7 /* ThemeColorKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADDDA22354FE40024F9C7 /* ThemeColorKind.swift */; };
+		F11ADE0D223671580024F9C7 /* ThemeFontKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADDDD2235530B0024F9C7 /* ThemeFontKind.swift */; };
+		F11ADE0E2236715D0024F9C7 /* ThemeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12BA158205D30A1006C1D56 /* ThemeUtil.swift */; };
+		F11ADE0F223671600024F9C7 /* ThemeUtil+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADDE522356ECE0024F9C7 /* ThemeUtil+Animation.swift */; };
+		F11ADE102236716C0024F9C7 /* Themeable +UITVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADD7C223516870024F9C7 /* Themeable +UITVC.swift */; };
+		F11ADE112236716C0024F9C7 /* Themeable +UITabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADD7F223518700024F9C7 /* Themeable +UITabBar.swift */; };
+		F11ADE122236716C0024F9C7 /* Themeable +UINavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADD812235189F0024F9C7 /* Themeable +UINavBar.swift */; };
+		F11ADE132236716C0024F9C7 /* Themeable+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADD6C223515A50024F9C7 /* Themeable+UIButton.swift */; };
+		F11ADE142236716C0024F9C7 /* Themeable+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADD6E223515C00024F9C7 /* Themeable+UILabel.swift */; };
+		F11ADE152236716C0024F9C7 /* Themeable+UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADD70223515D20024F9C7 /* Themeable+UITableViewCell.swift */; };
+		F11ADE162236716C0024F9C7 /* Themeable+UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADD72223515DD0024F9C7 /* Themeable+UISwitch.swift */; };
+		F11ADE172236716C0024F9C7 /* Themeable+UISegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADD74223515E90024F9C7 /* Themeable+UISegmentedControl.swift */; };
+		F11ADE182236716C0024F9C7 /* Themeable+UISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADD76223515FB0024F9C7 /* Themeable+UISlider.swift */; };
+		F11ADE192236716C0024F9C7 /* Themeable+UIStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADD782235160F0024F9C7 /* Themeable+UIStepper.swift */; };
+		F11ADE1A2236716C0024F9C7 /* Themeable+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADD7A2235161B0024F9C7 /* Themeable+UITextField.swift */; };
+		F11ADE1B223671700024F9C7 /* Themeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADD5A2235113B0024F9C7 /* Themeable.swift */; };
 		F120F5A4206120EE0088CC57 /* assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F120F5A3206120EE0088CC57 /* assets.bundle */; };
 		F12BA144205D2BDA006C1D56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12BA143205D2BDA006C1D56 /* AppDelegate.swift */; };
 		F12BA149205D2BDA006C1D56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12BA147205D2BDA006C1D56 /* Main.storyboard */; };
@@ -571,17 +592,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F11ADE0D223671580024F9C7 /* ThemeFontKind.swift in Sources */,
 				F11ADE03223578CC0024F9C7 /* FileParser.swift in Sources */,
+				F11ADE1A2236716C0024F9C7 /* Themeable+UITextField.swift in Sources */,
 				F11ADE00223578C40024F9C7 /* DecodingHelpers.swift in Sources */,
+				F11ADE0B2236714F0024F9C7 /* ThemeFontColorKind.swift in Sources */,
+				F11ADE0F223671600024F9C7 /* ThemeUtil+Animation.swift in Sources */,
+				F11ADE152236716C0024F9C7 /* Themeable+UITableViewCell.swift in Sources */,
 				F11ADE05223578CC0024F9C7 /* View+Extension.swift in Sources */,
+				F11ADE122236716C0024F9C7 /* Themeable +UINavBar.swift in Sources */,
 				F11ADDFD2235789A0024F9C7 /* ColorTypes.swift in Sources */,
+				F11ADE09223671440024F9C7 /* DecodingTypes.swift in Sources */,
 				F11ADDFE2235789A0024F9C7 /* Colors.swift in Sources */,
+				F11ADE0E2236715D0024F9C7 /* ThemeUtil.swift in Sources */,
+				F11ADE142236716C0024F9C7 /* Themeable+UILabel.swift in Sources */,
+				F11ADE162236716C0024F9C7 /* Themeable+UISwitch.swift in Sources */,
+				F11ADE172236716C0024F9C7 /* Themeable+UISegmentedControl.swift in Sources */,
+				F11ADE182236716C0024F9C7 /* Themeable+UISlider.swift in Sources */,
+				F11ADE1B223671700024F9C7 /* Themeable.swift in Sources */,
+				F11ADE08223671300024F9C7 /* ThemeKind.swift in Sources */,
 				F11ADDFF223578AB0024F9C7 /* Hybrid.swift in Sources */,
 				F11ADE04223578CC0024F9C7 /* FileWatcher.swift in Sources */,
+				F11ADE102236716C0024F9C7 /* Themeable +UITVC.swift in Sources */,
 				F11ADE06223578CC0024F9C7 /* VC+Extension.swift in Sources */,
+				F11ADE0A2236714B0024F9C7 /* ThemeDataKind.swift in Sources */,
 				F11ADDFC2235789A0024F9C7 /* ColorUtil.swift in Sources */,
+				F11ADE192236716C0024F9C7 /* Themeable+UIStepper.swift in Sources */,
+				F11ADE07223671230024F9C7 /* Theme.swift in Sources */,
+				F11ADE112236716C0024F9C7 /* Themeable +UITabBar.swift in Sources */,
 				F11ADE01223578C40024F9C7 /* Data+Extension.swift in Sources */,
+				F11ADE0C223671550024F9C7 /* ThemeColorKind.swift in Sources */,
 				F11ADE02223578C40024F9C7 /* JSONUtil.swift in Sources */,
+				F11ADE132236716C0024F9C7 /* Themeable+UIButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
