@@ -8,7 +8,7 @@ public class ThemeUtil{// rename to Themer?  ThemeApplier?
     */
    public static func apply(_ view:View){
       let themeables:[Themeable] = view.descendants() + (view is Themeable ? [view as! Themeable]: [])//add it view to the array if it is also themeable
-      themeables.forEach{ $0.apply() }
+      themeables.reversed().forEach{ $0.apply() }/*We reverse so that higher up components can override their siblings*/
    }
    /**
     * For Controllers that are not a View it self
