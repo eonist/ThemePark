@@ -5,7 +5,7 @@ extension UIButton:Themeable{
    /**
     * NOTE: there is also: backgroundColor
     */
-   func apply(){
+   public func apply(){
       setTitleColor(Theme.theme.color.font.highlight, for: .normal)
    }
 }

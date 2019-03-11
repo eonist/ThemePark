@@ -3,7 +3,7 @@
 import UIKit
 
 extension UITableViewCell:Themeable{
-   func apply() {
+   public func apply() {
       backgroundColor = Theme.theme.color.background
       textLabel?.textColor = Theme.theme.color.font.highlight
    }

@@ -2,7 +2,7 @@
 import UIKit
 
 extension UIStepper:Themeable{
-   func apply() {
+   public func apply() {
       self.tintColor = Theme.theme.color.tint
    }
 }

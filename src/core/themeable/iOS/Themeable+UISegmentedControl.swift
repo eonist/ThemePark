@@ -3,7 +3,7 @@
 import UIKit
 
 extension UISegmentedControl:Themeable{
-   func apply() {
+   public func apply() {
       self.tintColor = Theme.theme.color.tint
    }
 }

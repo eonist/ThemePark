@@ -2,7 +2,7 @@
 import UIKit
 
 extension UITextField:Themeable{
-   func apply() {
+   public func apply() {
       textColor = Theme.theme.color.font.highlight
       backgroundColor = Theme.theme.color.background
       borderStyle = .roundedRect

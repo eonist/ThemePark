@@ -4,7 +4,7 @@ import UIKit
 
 /*navBar*/
 extension UINavigationBar:Themeable{
-   func apply(){
+   public func apply(){
       self.barTintColor = Theme.theme.color.background
       //TODO: ⚠️️ this shuldnt be hardcode like this , try storing the actual style somehow?
       self.barStyle = (Theme.currentType == "dark" ? .black : .default)
