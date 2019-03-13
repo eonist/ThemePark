@@ -409,9 +409,9 @@
 				F11ADD58223510F30024F9C7 /* theme */,
 				F114AE4821A6E08500942A28 /* src */,
 				F12BA142205D2BDA006C1D56 /* ThemeTest */,
+				F11ADE21223672360024F9C7 /* ThemePark-example-macOS */,
 				F114AE3C21A6E06500942A28 /* ThemePark */,
 				F11ADDED2235718B0024F9C7 /* ThemePark-macOS */,
-				F11ADE21223672360024F9C7 /* ThemePark-example-macOS */,
 				F12BA141205D2BDA006C1D56 /* Products */,
 			);
 			sourceTree = "<group>";

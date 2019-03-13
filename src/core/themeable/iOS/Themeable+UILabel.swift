@@ -3,7 +3,7 @@ import UIKit
 
 extension UILabel:Themeable{
    public func apply(){
-      textColor = Theme.theme.color.font.highlight
+      self.textColor = Theme.theme.color.font.highlight
    }
 }
 #endif
