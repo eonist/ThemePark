@@ -2,6 +2,7 @@
 ![mit](https://img.shields.io/badge/License-MIT-brightgreen.svg) ![platform](https://img.shields.io/badge/Platform-iOS-blue.svg) ![Lang](https://img.shields.io/badge/Language-Swift%205.0-orange.svg)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![codebeat badge](https://codebeat.co/badges/947d25d2-2794-4a19-a25c-95f0d501e2e7)](https://codebeat.co/projects/github-com-eonist-themepark-master)
+[![SwiftLint Sindre](https://img.shields.io/badge/SwiftLint-Sindre-hotpink.svg)](https://github.com/sindresorhus/swiftlint-sindre)
 
 <img width="222" alt="img" src="https://rawgit.com/stylekit/img/master/ThemeLib.gif">  
 
