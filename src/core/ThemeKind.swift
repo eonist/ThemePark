@@ -1,6 +1,6 @@
 import Foundation
 
 protocol ThemeKind {
-   static var theme:ThemeDataKind {get set}
-   static var currentType:String {get set}
+   static var theme: ThemeDataKind { get set }
+   static var currentType: String { get set }
 }

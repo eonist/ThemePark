@@ -3,11 +3,11 @@ import UIKit
 /**
  * Animation
  */
-extension ThemeUtil{
+extension ThemeUtil {
    /**
     * Collects all Themeable views, And initiates "from, to" animation
     */
-   public static func transition(_ view:UIView){
+   public static func transition(_ view: UIView) {
       UIView.animate(withDuration: Theme.transitionDur, animations: {
          apply(view)
       }, completion: nil)
@@ -15,7 +15,7 @@ extension ThemeUtil{
    /**
     * For Controllers that are not a View it self
     */
-   public static func transition(_ viewController:UIViewController){
+   public static func transition(_ viewController: UIViewController) {
       UIView.animate(withDuration: Theme.transitionDur, animations: {
          apply(viewController)
       }, completion: nil)

@@ -1,10 +1,10 @@
 #if os(iOS)
 import UIKit
 /**
- * TODO: ⚠️️ Store these theme extensions centrally?
+ * Fixme: ⚠️️ Store these theme extensions centrally?
  */
-extension UIViewController:Themeable{
-   @objc public func apply(){
+extension UIViewController: Themeable {
+   @objc public func apply() {
       self.view.backgroundColor = Theme.theme.color.background
    }
 }

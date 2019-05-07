@@ -1,7 +1,7 @@
 import UIKit
 import ThemePark
 
-class SettingsController:UITableViewController {
+class SettingsController: UITableViewController {
     @IBAction func onSwitchChange(_ sender: UISwitch) {
       CustomTheme.currentType = sender.isOn ? CustomTheme.ThemeType.dark.rawValue : CustomTheme.ThemeType.light.rawValue
       CustomTheme.theme = CustomTheme.getTheme(theme: CustomTheme.currentType)
@@ -11,7 +11,7 @@ class SettingsController:UITableViewController {
 /**
  * Core
  */
-extension SettingsController{
+extension SettingsController {
    override func viewDidLayoutSubviews() {
       super.viewDidLayoutSubviews()
 //      AppDelegate.curViewController = self

@@ -7,8 +7,8 @@ import ThemePark_macOS
 /**
  * ThemeData
  */
-public struct ThemeData:Decodable,ThemeDataKind{
-   enum  CodingKeys: String, CodingKey { case color,font }/*CodingKeys are required when you want to customize your json parsing*/
+public struct ThemeData: Decodable, ThemeDataKind {
+   enum  CodingKeys: String, CodingKey { case color, font }/*CodingKeys are required when you want to customize your json parsing*/
    public var font: ThemeFontKind
    public var color: ThemeColorKind
    /**
@@ -19,6 +19,6 @@ public struct ThemeData:Decodable,ThemeDataKind{
       Swift.print("init")
       let container = try decoder.container(keyedBy: CodingKeys.self)
       font = try container.decode(ThemeFont.self, forKey: .font)
-      color  = try container.decode(ThemeColor.self, forKey: .color)
+      color = try container.decode(ThemeColor.self, forKey: .color)
    }
 }

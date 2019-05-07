@@ -5,13 +5,13 @@ import ThemePark
 import ThemePark_macOS
 #endif
 /**
- * TODO: ⚠️️ make something called DefaultTheme that you can extend, copying customTheme is a drag for testing
+ * Fixme: ⚠️️ make something called DefaultTheme that you can extend, copying customTheme is a drag for testing
  */
-public class CustomTheme:Theme{
-   public enum ThemeType:String {case light, dark}// ⚠️️ delete this
-   override public class func getTheme(theme:String) -> ThemeDataKind {
+public class CustomTheme: Theme {
+   public enum ThemeType: String { case light, dark }// ⚠️️ delete this
+   override public class func getTheme(theme: String) -> ThemeDataKind {
       Swift.print("getTheme")
-      let themeFileName:String = {
+      let themeFileName: String = {
          switch theme {
          case ThemeType.light.rawValue:
             return "light.json"
@@ -22,8 +22,8 @@ public class CustomTheme:Theme{
       }()
       /*⭐ Entry point ⭐*/
       do {
-         guard let data:Data = FileParser.data(path: Bundle.main.resourcePath!+"/assets.bundle/"+themeFileName) else {fatalError("wrong file path")}
-         let theme:ThemeData = try decode(data: data)
+         guard let data: Data = FileParser.data(path: Bundle.main.resourcePath!+"/assets.bundle/" + themeFileName) else { fatalError("wrong file path") }
+         let theme: ThemeData = try decode(data: data)
          //         Swift.print("theme.color.foreground:  \(theme.color.foreground)")
          //         Swift.print("theme.font.system:  \(theme.font.system)")
          //         Swift.print("theme.color.font.disabled:  \(theme.color.font.disabled)")

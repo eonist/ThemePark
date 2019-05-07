@@ -1,11 +1,11 @@
 #if os(iOS)
 import UIKit
 
-extension UIButton:Themeable{
+extension UIButton: Themeable {
    /**
     * NOTE: there is also: backgroundColor
     */
-   public func apply(){
+   public func apply() {
       setTitleColor(Theme.theme.color.font.highlight, for: .normal)
    }
 }

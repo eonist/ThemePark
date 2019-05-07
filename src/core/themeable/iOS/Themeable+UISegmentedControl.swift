@@ -2,7 +2,7 @@
 
 import UIKit
 
-extension UISegmentedControl:Themeable{
+extension UISegmentedControl: Themeable {
    public func apply() {
       self.tintColor = Theme.theme.color.tint
    }

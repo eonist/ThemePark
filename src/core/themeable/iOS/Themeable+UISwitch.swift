@@ -1,7 +1,7 @@
 #if os(iOS)
 
 import UIKit
-extension UISwitch:Themeable{
+extension UISwitch: Themeable {
    /**
     * Tint color doesn't animate very good on the switch if its used to switch theme, self.onTintColor = theme.color.tint
     */

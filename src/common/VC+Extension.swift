@@ -7,24 +7,22 @@ import Cocoa
  * VC
  */
 extension ViewController {
-    #if os(iOS)
+   #if os(iOS)
    func topMostViewController() -> ViewController {
-     
       if let tab = self.presentedViewController as? UITabBarController {
          if let selectedTab = tab.selectedViewController {
             return selectedTab.topMostViewController()
          }
          return tab.topMostViewController()
       }
-     
       if self.presentedViewController == nil {
          return self
       }
       return self.presentedViewController!.topMostViewController()
    }
-    #endif
+   #endif
 }
- #if os(iOS)
+#if os(iOS)
 /**
  * App
  */

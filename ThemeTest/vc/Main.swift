@@ -1,8 +1,8 @@
 import UIKit
 import ThemePark
 
-class Main:UITableViewController{
-    private var list:[String] = ["red","blue","green"]
+class Main: UITableViewController {
+    private var list: [String] = ["red", "blue", "green"]
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         ThemeUtil.apply(self)
@@ -11,7 +11,7 @@ class Main:UITableViewController{
 /**
  * Core
  */
-extension Main{
+extension Main {
    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
       let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")!
       cell.textLabel?.text = list[indexPath.row]

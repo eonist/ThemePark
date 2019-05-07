@@ -1,10 +1,8 @@
-
 import Cocoa
 import ThemePark_macOS
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
    @IBOutlet weak var window: NSWindow!
    func applicationDidFinishLaunching(_ aNotification: Notification) {
 //      Swift.print("\(NSFont.systemFont(ofSize: 20))")

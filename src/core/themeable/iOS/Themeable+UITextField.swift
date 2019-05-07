@@ -1,7 +1,7 @@
 #if os(iOS)
 import UIKit
 
-extension UITextField:Themeable{
+extension UITextField: Themeable {
    public func apply() {
       textColor = Theme.theme.color.font.highlight
       backgroundColor = Theme.theme.color.background
