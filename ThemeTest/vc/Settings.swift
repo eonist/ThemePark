@@ -2,7 +2,7 @@ import UIKit
 import ThemePark
 
 class SettingsController: UITableViewController {
-    @IBAction func onSwitchChange(_ sender: UISwitch) {
+    @IBAction private func onSwitchChange(_ sender: UISwitch) {
       CustomTheme.currentType = sender.isOn ? CustomTheme.ThemeType.dark.rawValue : CustomTheme.ThemeType.light.rawValue
       CustomTheme.theme = CustomTheme.getTheme(theme: CustomTheme.currentType)
       ThemeUtil.transition(self)

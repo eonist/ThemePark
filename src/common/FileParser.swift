@@ -1,6 +1,6 @@
 import Foundation
 
-public class FileParser{
+public class FileParser {
    /**
     * Returns string content from a file at file location "path"
     * - Param: path is the file path to the file in this format: (User/John/Desktop/test.txt)

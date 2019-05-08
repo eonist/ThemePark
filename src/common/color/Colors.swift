@@ -176,7 +176,7 @@ class Colors {
    static var BAUHAUS_COLOR_3: UInt = 0xCAA72A
    static var BAUHAUS_COLOR_4: UInt = 0x84251C
    static var BAUHAUS_COLOR_5: UInt = 0xE1E1E1
-   static var BAUHAUS_COLOR_S: Array<UInt> = [BAUHAUS_COLOR_1,BAUHAUS_COLOR_2,BAUHAUS_COLOR_3,BAUHAUS_COLOR_4,BAUHAUS_COLOR_5]
+   static var BAUHAUS_COLOR_S: [UInt] = [BAUHAUS_COLOR_1, BAUHAUS_COLOR_2, BAUHAUS_COLOR_3, BAUHAUS_COLOR_4, BAUHAUS_COLOR_5]
 }
 /*FANCY IOS Colors - hex colors: */
 extension Colors {

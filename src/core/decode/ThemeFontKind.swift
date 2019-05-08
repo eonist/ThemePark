@@ -1,6 +1,6 @@
 import Foundation
 
-public protocol ThemeFontKind{
+public protocol ThemeFontKind {
    var system: Font { get }
    var systemBold: Font { get }
 }
