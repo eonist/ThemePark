@@ -22,7 +22,7 @@ Theme library for iOS
 
 ### How do I get it
 - Carthage `github "eonist/ThemePark" "master"`
-- Manual Open `Spatial.xcodeproj`
+- Manual Open `.xcodeproj`
 - CocoaPod (Coming soon)
 
 ### Topology:
