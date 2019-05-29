@@ -5,7 +5,7 @@ public class ColorUtil {
    /**
     * # Examples:
     * Swift.print("red:  \(ColorUtils.color("red"))")
-    * Swift.print("blue:  \(ColorUtils.color("0x0000FF"))")
+    * Swift.print("blue:  \(ColorUtils.color("0x0000FF"))") // NSColor / UIColor
     */
    public static func color(_ colorStr: String) throws -> Color {
       let color: UInt = try {

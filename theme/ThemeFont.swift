@@ -8,12 +8,16 @@ import ThemePark_macOS
  * UIFont
  */
 public struct ThemeFont: Decodable, ThemeFontKind {
-   enum CodingKeys: String, CodingKey { case system, systemBold }/*CodingKeys are required when you want to customize your json parsing*/
-   public let system: Font
-   public let systemBold: Font
-   public init(from decoder: Decoder) throws {
-      let container = try decoder.container(keyedBy: CodingKeys.self)
-      system = try container.decode(key: .system, transformer: UIFontTransformer())
-      systemBold = try container.decode(key: .systemBold, transformer: UIFontTransformer())
-   }
+    /**
+     * CodingKeys are required when you want to customize your json parsing
+     */
+    enum CodingKeys: String, CodingKey { case system, systemBold }
+    public let system: Font
+    public let systemBold: Font
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        system = try container.decode(key: .system, transformer: UIFontTransformer())
+        systemBold = try container.decode(key: .systemBold, transformer: UIFontTransformer())
+    }
 }
+
