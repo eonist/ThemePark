@@ -20,4 +20,3 @@ public struct ThemeFont: Decodable, ThemeFontKind {
         systemBold = try container.decode(key: .systemBold, transformer: UIFontTransformer())
     }
 }
-

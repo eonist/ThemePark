@@ -3,7 +3,7 @@ import Foundation
 extension View {
     /**
      * Traverses the entire UIView hirearchy and collects views that are of speccific PARAM: type
-     * TODO: ⚠️️ this can be written more elegantly with flatmap
+     * Fixme: ⚠️️ this can be written more elegantly with flatmap
      */
     func descendants<T>(type: T.Type? = nil) -> [T] {
         var subViewsOfType: [T] = []
@@ -18,4 +18,3 @@ extension View {
         return subViewsOfType
     }
 }
-

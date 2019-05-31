@@ -24,7 +24,7 @@ open class Theme: ThemeKind {
      */
     private static var _currentType: String?
     /**
-     * TODO: ⚠️️ write doc
+     * Fixme: ⚠️️ write doc
      */
     public class var currentType: String {
         get {

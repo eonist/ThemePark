@@ -1,7 +1,7 @@
 import Foundation
 /**
  * Global generic decode method for Decodable
- * TODO: write example
+ * Fixme: write example
  */
 public func decode<T: Decodable>(data: Data) throws -> T {
    let decoder = JSONDecoder()
@@ -10,7 +10,7 @@ public func decode<T: Decodable>(data: Data) throws -> T {
 
 /**
  * Encodable Extension
- * TODO: write example
+ * Fixme: write example
  */
 extension Encodable {
    public func encode() throws -> Data {

@@ -8,7 +8,7 @@ import ThemePark_macOS
  * Fixme: ⚠️️ make something called DefaultTheme that you can extend, copying customTheme is a drag for testing
  */
 public class CustomTheme: Theme {
-    public enum ThemeType: String { case light, dark }// TODO: ⚠️️ delete this
+    public enum ThemeType: String { case light, dark }// Fixme: ⚠️️ delete this
     override public class func getTheme(theme: String) -> ThemeDataKind {
         Swift.print("getTheme")
         let themeFileName: String = {
