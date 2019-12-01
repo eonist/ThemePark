@@ -1,14 +1,9 @@
 import Foundation
-#if os(iOS)
-import ThemePark
-#elseif os(macOS)
-import ThemePark_macOS
-#endif
 /**
  * ThemeData
  */
 public struct ThemeData: Decodable, ThemeDataKind {
-   enum  CodingKeys: String, CodingKey { case color, font }/* CodingKeys are required when you want to customize your json parsing */
+   enum  CodingKeys: String, CodingKey { case color, font } // CodingKeys are required when you want to customize your json parsing
    public var font: ThemeFontKind
    public var color: ThemeColorKind
    /**

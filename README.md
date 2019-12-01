@@ -3,7 +3,7 @@
 ![platform](https://img.shields.io/badge/Platform-iOS-blue.svg)
 ![platform](https://img.shields.io/badge/Platform-macOS-blue.svg)
 ![Lang](https://img.shields.io/badge/Language-Swift%205.0-orange.svg)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![SPM](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/apple/swift)
 [![codebeat badge](https://codebeat.co/badges/947d25d2-2794-4a19-a25c-95f0d501e2e7)](https://codebeat.co/projects/github-com-eonist-themepark-master)
 [![SwiftLint Sindre](https://img.shields.io/badge/SwiftLint-Sindre-hotpink.svg)](https://github.com/sindresorhus/swiftlint-sindre)
 
@@ -21,9 +21,8 @@ Theme library for iOS
 - Store styles in json or struct
 
 ### How do I get it
-- Carthage `github "eonist/ThemePark" "master"`
+- SPM `"github.com/eonist/ThemePark"` branch: `"master"`
 - Manual Open `.xcodeproj`
-- CocoaPod (Coming soon)
 
 ### Topology:
     .

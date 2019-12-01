@@ -1,9 +1,4 @@
 import Foundation
-#if os(iOS)
-import ThemePark
-#elseif os(macOS)
-import ThemePark_macOS
-#endif
 /**
  * UIColor
  */

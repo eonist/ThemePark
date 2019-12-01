@@ -1,4 +1,5 @@
 import Foundation
+import QuartzCore
 /**
  * The transformer that handles parsing the string value to UIColor
  * Fixme: ⚠️️ Add support for 0x00FF00FF (Aka hex with alpha value)
@@ -13,7 +14,8 @@ public struct ColorTransformer: DecodingContainerTransformer {
 }
 /**
  * The transformer that handles parsing the dictionary (Aka fontName and fontSize) value to UIColor
- * EXAMPLE: "font":{"name":".SFUIText","size":"16"}
+ * ## Examples:
+ * "font":{"name":".SFUIText","size":"16"}
  */
 public struct UIFontTransformer: DecodingContainerTransformer {
    enum Error: Swift.Error { case cannotCreateFont(name: [String:String]) }

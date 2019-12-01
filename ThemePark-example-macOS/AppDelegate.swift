@@ -1,5 +1,4 @@
 import Cocoa
-import ThemePark_macOS
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {

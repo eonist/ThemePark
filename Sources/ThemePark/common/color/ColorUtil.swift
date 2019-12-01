@@ -1,4 +1,5 @@
 import Foundation
+import QuartzCore
 
 public class ColorUtil {
    enum Error: Swift.Error { case inCorrectColorType(hex: String) }
@@ -9,8 +10,8 @@ public class ColorUtil {
     */
    public static func color(_ colorStr: String) throws -> Color {
       let color: UInt = try {
-         if colorStr.hasPrefix("0x") {//do additional checking see regex pattern, but good enough for now
-            return UInt(Float(colorStr)!)//CAUTION: ⚠️️ if you do "0xFF0000FF".uint it will give the wrong value, use UInt(Double("")!) instead for cases like that
+         if colorStr.hasPrefix("0x") { // do additional checking see regex pattern, but good enough for now
+            return UInt(Float(colorStr)!) // CAUTION: ⚠️️ if you do "0xFF0000FF".uint it will give the wrong value, use UInt(Double("")!) instead for cases like that
          }else {
             guard let uint: UInt = ColorTypes.color(colorStr) else { throw Error.inCorrectColorType(hex: colorStr) }
             return uint
@@ -21,7 +22,8 @@ public class ColorUtil {
    /**
     * Returns NSColor for hex int
     * - Note: Convenience method
-    * - Example: nsColor(UInt(0x39D149))
+    * ## Examples:
+    * nsColor(UInt(0x39D149))
     */
    private static func color(_ hexColor: UInt, alpha: CGFloat = 1.0) -> Color {
       let rgb: UInt = hexColor

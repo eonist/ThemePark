@@ -1,5 +1,4 @@
 import UIKit
-import ThemePark
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

@@ -1,6 +1,6 @@
 import UIKit
-import ThemePark
 
+// - Fixme: ⚠️️ rename to MainView.swift
 class Main: UITableViewController {
     private var list: [String] = ["red", "blue", "green"]
     override func viewDidLayoutSubviews() {

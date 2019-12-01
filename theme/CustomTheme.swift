@@ -1,11 +1,6 @@
 import Foundation
-#if os(iOS)
-import ThemePark
-#elseif os(macOS)
-import ThemePark_macOS
-#endif
 /**
- * Fixme: ⚠️️ make something called DefaultTheme that you can extend, copying customTheme is a drag for testing
+ * - Fixme: ⚠️️ make something called DefaultTheme that you can extend, copying customTheme is a drag for testing
  */
 public class CustomTheme: Theme {
     public enum ThemeType: String { case light, dark }// Fixme: ⚠️️ delete this
@@ -20,7 +15,7 @@ public class CustomTheme: Theme {
             default: fatalError("theme not supported")
             }
         }()
-        /*⭐ Entry point ⭐*/
+        // ⭐ Entry point ⭐
         do {
             guard let data: Data = FileParser.data(path: Bundle.main.resourcePath!+"/assets.bundle/" + themeFileName) else { fatalError("wrong file path") }
             let theme: ThemeData = try decode(data: data)
