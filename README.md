@@ -1,4 +1,4 @@
-# ThemePark 🎢
+# ThemePark
 ![mit](https://img.shields.io/badge/License-MIT-brightgreen.svg)
 ![platform](https://img.shields.io/badge/Platform-iOS-blue.svg)
 ![platform](https://img.shields.io/badge/Platform-macOS-blue.svg)
