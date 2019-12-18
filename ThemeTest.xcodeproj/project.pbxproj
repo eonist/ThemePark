@@ -28,6 +28,7 @@
 		F12BA149205D2BDA006C1D56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12BA147205D2BDA006C1D56 /* Main.storyboard */; };
 		F12BA14B205D2BDA006C1D56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F12BA14A205D2BDA006C1D56 /* Assets.xcassets */; };
 		F12BA14E205D2BDA006C1D56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12BA14C205D2BDA006C1D56 /* LaunchScreen.storyboard */; };
+		F1354F4023AA55E9002BBF3C /* ThemeParkIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1354F3F23AA55E9002BBF3C /* ThemeParkIOSTests.swift */; };
 		F178DE1D205E878B001FD75E /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F178DE1C205E878B001FD75E /* Main.swift */; };
 		F178DE21205EB232001FD75E /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F178DE20205EB232001FD75E /* Settings.swift */; };
 		F1E6455823940199008D2ABE /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F120F5AA206134690088CC57 /* ColorUtil.swift */; };
@@ -100,6 +101,16 @@
 		F1E6459B2394019A008D2ABE /* Themeable+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11ADD7A2235161B0024F9C7 /* Themeable+UITextField.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F1354F4223AA55E9002BBF3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F12BA138205D2BDA006C1D56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F12BA13F205D2BDA006C1D56;
+			remoteInfo = ThemePark;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		F114AE4721A6E06500942A28 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -159,13 +170,16 @@
 		F120F5AA206134690088CC57 /* ColorUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
 		F120F5AD206136CD0088CC57 /* ColorTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTypes.swift; sourceTree = "<group>"; };
 		F120F5AE206136CD0088CC57 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		F12BA140205D2BDA006C1D56 /* ThemeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThemeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F12BA140205D2BDA006C1D56 /* ThemePark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThemePark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F12BA143205D2BDA006C1D56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F12BA148205D2BDA006C1D56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F12BA14A205D2BDA006C1D56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F12BA14D205D2BDA006C1D56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F12BA14F205D2BDA006C1D56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F12BA158205D30A1006C1D56 /* ThemeUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeUtil.swift; sourceTree = "<group>"; };
+		F1354F3D23AA55E9002BBF3C /* ThemeParkIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThemeParkIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1354F3F23AA55E9002BBF3C /* ThemeParkIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeParkIOSTests.swift; sourceTree = "<group>"; };
+		F1354F4123AA55E9002BBF3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F178DE1C205E878B001FD75E /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		F178DE1E205E8E2C001FD75E /* Theme+Styles-DEPRECATED.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Theme+Styles-DEPRECATED.swift"; sourceTree = "<group>"; };
 		F178DE20205EB232001FD75E /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -180,6 +194,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F12BA13D205D2BDA006C1D56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1354F3A23AA55E9002BBF3C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -342,6 +363,7 @@
 		F12BA137205D2BDA006C1D56 = {
 			isa = PBXGroup;
 			children = (
+				F1354F4723AA55EF002BBF3C /* Tests */,
 				F11ADE342236733B0024F9C7 /* assets.bundle */,
 				F1E645532394013D008D2ABE /* Sources */,
 				F11ADD58223510F30024F9C7 /* theme */,
@@ -354,8 +376,9 @@
 		F12BA141205D2BDA006C1D56 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F12BA140205D2BDA006C1D56 /* ThemeTest.app */,
+				F12BA140205D2BDA006C1D56 /* ThemePark.app */,
 				F11ADE20223672360024F9C7 /* ThemePark-example-macOS.app */,
+				F1354F3D23AA55E9002BBF3C /* ThemeParkIOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -383,6 +406,23 @@
 				F11ADD6B223515810024F9C7 /* themeable */,
 			);
 			path = core;
+			sourceTree = "<group>";
+		};
+		F1354F3E23AA55E9002BBF3C /* ThemeParkIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1354F3F23AA55E9002BBF3C /* ThemeParkIOSTests.swift */,
+				F1354F4123AA55E9002BBF3C /* Info.plist */,
+			);
+			path = ThemeParkIOSTests;
+			sourceTree = "<group>";
+		};
+		F1354F4723AA55EF002BBF3C /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F1354F3E23AA55E9002BBF3C /* ThemeParkIOSTests */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		F1E645532394013D008D2ABE /* Sources */ = {
@@ -423,9 +463,9 @@
 			productReference = F11ADE20223672360024F9C7 /* ThemePark-example-macOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F12BA13F205D2BDA006C1D56 /* ThemeTest */ = {
+		F12BA13F205D2BDA006C1D56 /* ThemePark */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F12BA152205D2BDA006C1D56 /* Build configuration list for PBXNativeTarget "ThemeTest" */;
+			buildConfigurationList = F12BA152205D2BDA006C1D56 /* Build configuration list for PBXNativeTarget "ThemePark" */;
 			buildPhases = (
 				F12BA13C205D2BDA006C1D56 /* Sources */,
 				F12BA13D205D2BDA006C1D56 /* Frameworks */,
@@ -437,10 +477,28 @@
 			);
 			dependencies = (
 			);
-			name = ThemeTest;
+			name = ThemePark;
 			productName = ThemeTest;
-			productReference = F12BA140205D2BDA006C1D56 /* ThemeTest.app */;
+			productReference = F12BA140205D2BDA006C1D56 /* ThemePark.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F1354F3C23AA55E9002BBF3C /* ThemeParkIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1354F4423AA55E9002BBF3C /* Build configuration list for PBXNativeTarget "ThemeParkIOSTests" */;
+			buildPhases = (
+				F1354F3923AA55E9002BBF3C /* Sources */,
+				F1354F3A23AA55E9002BBF3C /* Frameworks */,
+				F1354F3B23AA55E9002BBF3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1354F4323AA55E9002BBF3C /* PBXTargetDependency */,
+			);
+			name = ThemeParkIOSTests;
+			productName = ThemeParkIOSTests;
+			productReference = F1354F3D23AA55E9002BBF3C /* ThemeParkIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -448,7 +506,7 @@
 		F12BA138205D2BDA006C1D56 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = futurelab;
 				TargetAttributes = {
@@ -460,6 +518,11 @@
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
+					};
+					F1354F3C23AA55E9002BBF3C = {
+						CreatedOnToolsVersion = 11.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F12BA13F205D2BDA006C1D56;
 					};
 				};
 			};
@@ -476,8 +539,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F12BA13F205D2BDA006C1D56 /* ThemeTest */,
+				F12BA13F205D2BDA006C1D56 /* ThemePark */,
 				F11ADE1F223672360024F9C7 /* ThemePark-example-macOS */,
+				F1354F3C23AA55E9002BBF3C /* ThemeParkIOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -501,6 +565,13 @@
 				F12BA14B205D2BDA006C1D56 /* Assets.xcassets in Resources */,
 				F12BA149205D2BDA006C1D56 /* Main.storyboard in Resources */,
 				F11ADE38223676040024F9C7 /* assets.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1354F3B23AA55E9002BBF3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,7 +713,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F1354F3923AA55E9002BBF3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1354F4023AA55E9002BBF3C /* ThemeParkIOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1354F4323AA55E9002BBF3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F12BA13F205D2BDA006C1D56 /* ThemePark */;
+			targetProxy = F1354F4223AA55E9002BBF3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F11ADE262236723A0024F9C7 /* MainMenu.xib */ = {
@@ -856,6 +943,43 @@
 			};
 			name = Release;
 		};
+		F1354F4523AA55E9002BBF3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/ThemeParkIOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.futurelab.ThemeParkIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThemePark.app/ThemePark";
+			};
+			name = Debug;
+		};
+		F1354F4623AA55E9002BBF3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/ThemeParkIOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.futurelab.ThemeParkIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThemePark.app/ThemePark";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -877,11 +1001,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F12BA152205D2BDA006C1D56 /* Build configuration list for PBXNativeTarget "ThemeTest" */ = {
+		F12BA152205D2BDA006C1D56 /* Build configuration list for PBXNativeTarget "ThemePark" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F12BA153205D2BDA006C1D56 /* Debug */,
 				F12BA154205D2BDA006C1D56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1354F4423AA55E9002BBF3C /* Build configuration list for PBXNativeTarget "ThemeParkIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1354F4523AA55E9002BBF3C /* Debug */,
+				F1354F4623AA55E9002BBF3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

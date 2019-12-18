@@ -6,6 +6,7 @@
 [![SPM](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/apple/swift)
 [![codebeat badge](https://codebeat.co/badges/947d25d2-2794-4a19-a25c-95f0d501e2e7)](https://codebeat.co/projects/github-com-eonist-themepark-master)
 [![SwiftLint Sindre](https://img.shields.io/badge/SwiftLint-Sindre-hotpink.svg)](https://github.com/sindresorhus/swiftlint-sindre)
+[![Github actions badge](https://badgen.net/github/checks/eonist/ThemePark?icon=github&label=Build%20Status)](https://github.com/eonist/ThemePark/actions)
 
 <img width="222" alt="img" src="https://rawgit.com/stylekit/img/master/ThemeLib.gif">  
 
@@ -40,3 +41,4 @@ Theme library for iOS
 ### Todo:
 - Clean up the code ✅
 - Add OliverAtkinsons (from swift-lang) nifty JSON Transformer trick: [http://eon.codes/blog/2018/04/12/advance-json-parsing-pt1/](http://eon.codes/blog/2018/04/12/advance-json-parsing-pt1/) 👊 ✅
+- Add json and file deps
