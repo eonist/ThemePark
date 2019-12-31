@@ -3,8 +3,8 @@
 ![platform](https://img.shields.io/badge/Platform-iOS/macOS-blue.svg)
 ![Lang](https://img.shields.io/badge/Language-Swift%205.0-orange.svg)
 [![SPM](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/apple/swift)
-[![codebeat badge](https://codebeat.co/badges/947d25d2-2794-4a19-a25c-95f0d501e2e7)](https://codebeat.co/projects/github-com-eonist-themepark-master)
 [![SwiftLint Sindre](https://img.shields.io/badge/SwiftLint-Sindre-hotpink.svg)](https://github.com/sindresorhus/swiftlint-sindre)
+[![codebeat badge](https://codebeat.co/badges/947d25d2-2794-4a19-a25c-95f0d501e2e7)](https://codebeat.co/projects/github-com-eonist-themepark-master)
 [![Github actions badge](https://badgen.net/github/checks/eonist/ThemePark?icon=github&label=Build%20Status)](https://github.com/eonist/ThemePark/actions)
 
 <img width="222" alt="img" src="https://rawgit.com/stylekit/img/master/ThemeLib.gif">  
