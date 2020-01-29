@@ -10,7 +10,7 @@
 <img width="222" alt="img" src="https://rawgit.com/stylekit/img/master/ThemeLib.gif">  
 
 ### What is it
-Theme library for iOS
+Theme library for iOS & Mac
 
 ### How does it work
 - Watches for changes 💥
