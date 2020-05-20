@@ -37,6 +37,45 @@ Theme library for iOS & Mac
                ├── util       # Apply theme to components
                └── themeable  # Components that are themeable
 
+### Examples:
+
+**Change theme live / dynamically in the app**
+```swift
+@IBAction private func onSwitchChange(_ sender: UISwitch) {
+      CustomTheme.currentType = sender.isOn ? CustomTheme.ThemeType.dark.rawValue : CustomTheme.ThemeType.light.rawValue
+      CustomTheme.theme = CustomTheme.getTheme(theme: CustomTheme.currentType)
+      ThemeUtil.transition(self)
+    }
+}
+```
+
+**Add theme in controller**
+```swift
+class Main: UITableViewController {
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        ThemeUtil.apply(self)
+    }
+}
+```
+
+**Hot load theme / see your theme changes be applied live**
+```swift
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+   // Set the customTheme, before components ask Theme for styling
+   CustomTheme.setTheme(themeType: CustomTheme.ThemeType.light.rawValue) // set init theme
+   // Watches for changes, super useful for testing styling by just changing the json doc
+   FileWatcher(Bundle.main.resourcePath!+"/assets.bundle/dark.json") {
+      Swift.print("the file was modified")
+      if let controller = UIApplication.shared.topMostViewController() {
+         CustomTheme.theme = CustomTheme.getTheme(theme: CustomTheme.currentType)//update the theme
+         ThemeUtil.apply(controller)
+      }
+   }.start()
+   return true
+}
+```
+
 ### Todo:
 - Clean up the code ✅
 - Add OliverAtkinsons (from swift-lang) nifty JSON Transformer trick: [http://eon.codes/blog/2018/04/12/advance-json-parsing-pt1/](http://eon.codes/blog/2018/04/12/advance-json-parsing-pt1/) 👊 ✅
